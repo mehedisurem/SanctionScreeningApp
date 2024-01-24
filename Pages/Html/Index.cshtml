@@ -1,0 +1,28 @@
+﻿@page
+@model SanctionScreeningApp.Pages.Html.IndexModel
+
+<h2>List of Users</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>User Name</th>
+            <th>Password</th>
+            <th>User Type</th>
+            <th>Branch</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.UserList)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.UserName</td>
+                <td>@user.Password</td>
+                <td>@user.UserType</td>
+                <td>@user.Branch</td>
+            </tr>
+        }
+    </tbody>
+</table>

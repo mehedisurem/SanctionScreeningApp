@@ -1,0 +1,47 @@
+﻿@page
+@model SanctionScreeningApp.Pages.Html.AccountModel
+@{
+    ViewData["Title"] = "Customer Accounts";
+}
+
+<h2>Customer Accounts</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Account No</th>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Contact No</th>
+            <th>NID No</th>
+            <th>Father's Name</th>
+            <th>Mother's Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Postal Code</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model.CustomerList)
+        {
+            <tr>
+                <td>@customer.AccountNo</td>
+                <td>@customer.EmailAddress</td>
+                <td>@customer.FirstName</td>
+                <td>@customer.LastName</td>
+                <td>@customer.ContactNo</td>
+                <td>@customer.NIDNo</td>
+                <td>@customer.FathersName</td>
+                <td>@customer.MothersName</td>
+                <td>@customer.Address</td>
+                <td>@customer.City</td>
+                <td>@customer.Country</td>
+                <td>@customer.PostalCode</td>
+                <td>@customer.Gender</td>
+            </tr>
+        }
+    </tbody>
+</table>
