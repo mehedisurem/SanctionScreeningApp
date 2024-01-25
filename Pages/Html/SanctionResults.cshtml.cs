@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SanctionScreeningApp.Pages.Admin
+namespace SanctionScreeningApp.Pages.Html
 {
-    public class AdminHomeModel : PageModel
+    public class SanctionResultsModel : PageModel
     {
         public void OnGet()
         {

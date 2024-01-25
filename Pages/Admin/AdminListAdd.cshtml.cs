@@ -31,7 +31,15 @@ namespace SanctionScreeningApp.Pages.Admin
         {
             // Initialization logic if needed
         }
+        public IActionResult OnGetLogout()
+        {
+            // Implement any necessary logic to clear or sign out the user session
+            // For example, you can use the following line to sign out the user:
+            // HttpContext.SignOutAsync();
 
+            // Redirect to the login page or any other page after logout
+            return RedirectToPage("/Login");
+        }
         public IActionResult OnPost()
         {
             if (ModelState.IsValid)

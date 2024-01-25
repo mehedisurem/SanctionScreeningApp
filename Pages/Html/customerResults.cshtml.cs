@@ -49,12 +49,21 @@ namespace SanctionScreeningApp.Pages.Html
         {
             // Initialization logic if needed
         }
-
-       /* public void OnPost()
+        public IActionResult OnGetLogout()
         {
-            // Call the search logic
-            OnPostSearch();
-        }*/
+            // Implement any necessary logic to clear or sign out the user session
+            // For example, you can use the following line to sign out the user:
+            // HttpContext.SignOutAsync();
+
+            // Redirect to the login page or any other page after logout
+            return RedirectToPage("/Login");
+        }
+
+        /* public void OnPost()
+         {
+             // Call the search logic
+             OnPostSearch();
+         }*/
 
         public void OnPostSearch()
         {

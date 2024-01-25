@@ -91,7 +91,7 @@ namespace SanctionScreeningApp.Pages
                                 // Redirect based on UserType
                                 if (userType == "BranchUser")
                                 {
-                                    return RedirectToPage("/Html/Index");
+                                    return RedirectToPage("/Html/Dashboard");
                                 }
                                 else if (userType == "Admin")
                                 {
